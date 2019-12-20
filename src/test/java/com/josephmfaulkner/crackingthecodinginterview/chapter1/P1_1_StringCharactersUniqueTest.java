@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class StringCharactersUniqueSortTest 
+public class P1_1_StringCharactersUniqueTest 
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class StringCharactersUniqueSortTest
      *
      * @param testName name of the test case
      */
-    public StringCharactersUniqueSortTest( String testName )
+    public P1_1_StringCharactersUniqueTest( String testName )
     {
         super( testName );
     }
@@ -25,42 +25,42 @@ public class StringCharactersUniqueSortTest
      */
     public static Test suite()
     {
-        return new TestSuite( StringCharactersUniqueSortTest.class );
+        return new TestSuite( P1_1_StringCharactersUniqueTest.class );
     }
 
 
-    public void testAllUniqueTrueSort()
+    public void testAllUniqueTrue()
     {
     	String testString = "QWERTY";
     	boolean expectedAllUnique = true; 
-    	boolean actualAllUnique = StringCharsUnique.allUniqueCharactersSort(testString.toCharArray());
+    	boolean actualAllUnique = P1_1_AllCharsUnique.allUniqueCharacters(testString);
     	
         assertEquals( expectedAllUnique, actualAllUnique );
     }
     
-    public void testAllUniqueFalseSort()
+    public void testAllUniqueFalse()
     {
     	String testString = "APPLE";
     	boolean expectedAllUnique = false; 
-    	boolean actualAllUnique = StringCharsUnique.allUniqueCharactersSort(testString.toCharArray());
+    	boolean actualAllUnique = P1_1_AllCharsUnique.allUniqueCharacters(testString);
     	
         assertEquals( expectedAllUnique, actualAllUnique );
     }
     
-    public void testAllUniqueTrueLongStringSort()
+    public void testAllUniqueTrueLongString()
     {
     	String testString = "1234567890AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz!@#$%^&*()";
     	boolean expectedAllUnique = true; 
-    	boolean actualAllUnique = StringCharsUnique.allUniqueCharactersSort(testString.toCharArray());
+    	boolean actualAllUnique = P1_1_AllCharsUnique.allUniqueCharacters(testString);
     	
         assertEquals( expectedAllUnique, actualAllUnique );
     }
     
-    public void testAllUniqueFalseLongStringSort()
+    public void testAllUniqueFalseLongString()
     {
     	String testString = ".1234567890AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz!@#$%^&*().";
     	boolean expectedAllUnique = false; 
-    	boolean actualAllUnique = StringCharsUnique.allUniqueCharactersSort(testString.toCharArray());
+    	boolean actualAllUnique = P1_1_AllCharsUnique.allUniqueCharacters(testString);
     	
         assertEquals( expectedAllUnique, actualAllUnique );
     }

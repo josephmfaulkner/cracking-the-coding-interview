@@ -2,7 +2,7 @@ package com.josephmfaulkner.crackingthecodinginterview.chapter1;
 
 import java.util.Map;
 
-public class StringCharsPermutation {
+public class P1_2_StringCharsPermutation {
 	
 	private static boolean sameCharacters(Map<Character, Integer> map1, Map<Character, Integer> map2) {
 		

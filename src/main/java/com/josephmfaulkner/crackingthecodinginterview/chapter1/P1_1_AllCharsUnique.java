@@ -8,7 +8,7 @@ import java.util.Map;
 
 
 
-public class StringCharsUnique {
+public class P1_1_AllCharsUnique {
 
 	private static boolean allUniqueCharactersMap(Map<Character, Integer> characters) {		
 		for(Character c: characters.keySet()) {

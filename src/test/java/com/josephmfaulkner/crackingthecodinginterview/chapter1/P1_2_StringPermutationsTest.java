@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class StringPermutationsTest 
+public class P1_2_StringPermutationsTest 
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class StringPermutationsTest
      *
      * @param testName name of the test case
      */
-    public StringPermutationsTest( String testName )
+    public P1_2_StringPermutationsTest( String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class StringPermutationsTest
      */
     public static Test suite()
     {
-        return new TestSuite( StringPermutationsTest.class );
+        return new TestSuite( P1_2_StringPermutationsTest.class );
     }
 
 
@@ -35,7 +35,7 @@ public class StringPermutationsTest
     	String testString2 = "BABA";
     	boolean expectedArePermutations = true; 
     	
-    	boolean actualArePermutations = StringCharsPermutation.arePermutation(testString1,testString2);
+    	boolean actualArePermutations = P1_2_StringCharsPermutation.arePermutation(testString1,testString2);
     	
         assertEquals( expectedArePermutations, actualArePermutations );
     }
@@ -46,7 +46,7 @@ public class StringPermutationsTest
     	String testString2 = "twelve plus one";
     	boolean expectedArePermutations = true; 
     	
-    	boolean actualArePermutations = StringCharsPermutation.arePermutation(testString1,testString2);
+    	boolean actualArePermutations = P1_2_StringCharsPermutation.arePermutation(testString1,testString2);
     	
         assertEquals( expectedArePermutations, actualArePermutations );
     }
@@ -57,7 +57,7 @@ public class StringPermutationsTest
     	String testString2 = "BABA";
     	boolean expectedArePermutations = false; 
     	
-    	boolean actualArePermutations = StringCharsPermutation.arePermutation(testString1,testString2);
+    	boolean actualArePermutations = P1_2_StringCharsPermutation.arePermutation(testString1,testString2);
     	
         assertEquals( expectedArePermutations, actualArePermutations );
     }
@@ -68,7 +68,7 @@ public class StringPermutationsTest
     	String testString2 = "OLIVEE";
     	boolean expectedArePermutations = false; 
     	
-    	boolean actualArePermutations = StringCharsPermutation.arePermutation(testString1,testString2);
+    	boolean actualArePermutations = P1_2_StringCharsPermutation.arePermutation(testString1,testString2);
     	
         assertEquals( expectedArePermutations, actualArePermutations );
     }
@@ -79,7 +79,7 @@ public class StringPermutationsTest
     	String testString2 = "OLIVEA";
     	boolean expectedArePermutations = false; 
     	
-    	boolean actualArePermutations = StringCharsPermutation.arePermutation(testString1,testString2);
+    	boolean actualArePermutations = P1_2_StringCharsPermutation.arePermutation(testString1,testString2);
     	
         assertEquals( expectedArePermutations, actualArePermutations );
     }
