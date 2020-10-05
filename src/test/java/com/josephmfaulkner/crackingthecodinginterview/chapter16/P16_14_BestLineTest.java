@@ -10,7 +10,7 @@ public class P16_14_BestLineTest {
 	public void line45Degree() {
 		int point1[] = {0, 0};
 		int point2[] = {1, 1};
-		String expectedLineResult = "45";
+		String expectedLineResult = "45-0-0";
 		String actualLineResult = P16_14_BestLine.makeLineFromPoints(point1, point2);
 		
 		assertEquals(expectedLineResult, actualLineResult);
@@ -21,7 +21,7 @@ public class P16_14_BestLineTest {
 	public void line90Degree() {
 		int point1[] = {0, 0};
 		int point2[] = {0, 1};
-		String expectedLineResult = "90";
+		String expectedLineResult = "90-0-0";
 		String actualLineResult = P16_14_BestLine.makeLineFromPoints(point1, point2);
 		
 		assertEquals(expectedLineResult, actualLineResult);
@@ -32,7 +32,7 @@ public class P16_14_BestLineTest {
 	public void lineNeg45Degree() {
 		int point1[] = {0, 0};
 		int point2[] = {1, -1};
-		String expectedLineResult = "-45";
+		String expectedLineResult = "-45-0-0";
 		String actualLineResult = P16_14_BestLine.makeLineFromPoints(point1, point2);
 		
 		assertEquals(expectedLineResult, actualLineResult);
@@ -43,7 +43,7 @@ public class P16_14_BestLineTest {
 	public void line135Degree() {
 		int point1[] = {0, 0};
 		int point2[] = {-1, 1};
-		String expectedLineResult = "-45";
+		String expectedLineResult = "-45-0-0";
 		String actualLineResult = P16_14_BestLine.makeLineFromPoints(point1, point2);
 		
 		assertEquals(expectedLineResult, actualLineResult);
@@ -54,7 +54,7 @@ public class P16_14_BestLineTest {
 	public void line225Degree() {
 		int point1[] = {0, 0};
 		int point2[] = {-1, -1};
-		String expectedLineResult = "45";
+		String expectedLineResult = "45-0-0";
 		String actualLineResult = P16_14_BestLine.makeLineFromPoints(point1, point2);
 		
 		assertEquals(expectedLineResult, actualLineResult);
